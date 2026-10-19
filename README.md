@@ -27,8 +27,8 @@ I'm a Computer Science Engineering student who likes shipping things people can 
 const vedant = {
   role: "CSE Student · Full-Stack Developer",
   focus: ["React + TypeScript", "Node.js APIs", "LLM integration"],
-  currentlyBuilding: "AI-powered developer & career tools",
-  currentlyLearning: ["System design", "Testing", "Deployment & CI/CD"],
+  currentlyBuilding: "GitSentinel · Autonomous AI Code Review & Security Gate",
+  currentlyLearning: ["System design", "Distributed systems", "Deployment & CI/CD"],
   lookingFor: "Full-stack / AI engineering internships",
   funFact: "I'd rather ship it and iterate than polish it forever.",
 };
@@ -49,42 +49,44 @@ const vedant = {
 
 ## 🚀 Featured Project
 
-### 🧠 AI Resume Builder: ATS scoring + AI suggestions + PDF export
+### 🛡️ GitSentinel: Autonomous AI Code Review & PR Security Gate
 
-> A full-stack app that helps people write better resumes. You build one in a live-preview editor, get an **ATS compatibility score (0–100)** with AI-generated tips to improve it, then export a clean PDF.
+> An enterprise-grade, fail-closed GitHub App and real-time security dashboard that automates Pull Request code reviews. It scans incoming diffs for security vulnerabilities, secrets, and AST lint errors, orchestrates multi-model AI reviews (Claude, Gemini, GPT-4o), and posts inline comments with automated merge gate verdicts.
 
 <p>
-  <img src="https://img.shields.io/badge/React_19-0d1117?style=flat-square&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Next.js_14-0d1117?style=flat-square&logo=nextdotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178C6" />
-  <img src="https://img.shields.io/badge/Vite-0d1117?style=flat-square&logo=vite&logoColor=646CFF" />
-  <img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=06B6D4" />
   <img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=339933" />
-  <img src="https://img.shields.io/badge/Express-0d1117?style=flat-square&logo=express&logoColor=white" />
-  <img src="https://img.shields.io/badge/Groq_API-0d1117?style=flat-square&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169E1" />
+  <img src="https://img.shields.io/badge/Prisma_ORM-0d1117?style=flat-square&logo=prisma&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis_%2B_BullMQ-0d1117?style=flat-square&logo=redis&logoColor=DC382D" />
+  <img src="https://img.shields.io/badge/GitHub_App_API-0d1117?style=flat-square&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Multi--LLM-Claude_%7C_Gemini_%7C_GPT--4o-0d1117?style=flat-square&logo=openai&logoColor=white" />
 </p>
 
 **What's under the hood**
 
 | | |
 |---|---|
-| 🎯 **ATS analysis** | Resume text goes to an Express endpoint, then to the Groq LLM API, which returns a 0–100 score plus improvement tips |
-| 🧩 **Type-safe forms** | React Hook Form + Zod schemas validate every section before it reaches the preview |
-| 🗂️ **Predictable state** | Zustand store, with React Query for server state |
-| 📄 **Real PDF export** | One-click download generated client-side with html2pdf.js |
-| ☁️ **Deployable** | Split frontend/backend, with Render deployment docs included |
+| 🛡️ **Fail-Closed Security Gate** | Blocks malicious PRs, hardcoded API secrets, SQL injections, and prompt injections before code ever merges |
+| ⚡ **Distributed Queue & Worker** | BullMQ + Redis handles webhook concurrency with jittered exponential backoffs, lease heartbeats, and idempotency locks |
+| 🤖 **Multi-Model AI Orchestrator** | Coordinates Claude 3.5 Sonnet, Gemini 1.5 Pro, and GPT-4o with deterministic output validation & fingerprint deduplication |
+| 🔍 **Static Analysis (SAST)** | Built-in AST analysis using ESLint, Ruff, Bandit, and dependency vulnerability scanning |
+| 📊 **CyberOps Dashboard** | Live telemetry, audit logs, cyber diff inspector, repository health metrics, and interactive AI chatbot |
 
 ```mermaid
 flowchart LR
-    U(["👤 User"]) --> F["React 19 + TypeScript<br/>Zustand · React Hook Form · Zod"]
-    F -->|"POST /api/ats-score"| B["Express API<br/>Node.js"]
-    F -->|"POST /api/generate-content"| B
-    B --> G[["Groq LLM API"]]
-    F --> P["html2pdf.js<br/>PDF export"]
+    GH(["🐙 GitHub PR Event"]) -->|Webhook| W["Next.js App Router<br/>Dashboard & API"]
+    W -->|Enqueue Review Job| R[("⚡ Redis + BullMQ<br/>Priority Queue")]
+    R -->|Fair Dispatch| K["⚙️ Worker Service<br/>Node.js Engine"]
+    K --> S["🔍 SAST & Secret Scanner<br/>ESLint · Ruff · Bandit"]
+    K --> L[["🤖 Multi-Model LLM<br/>Claude · Gemini · GPT-4o"]]
+    K -->|"Inline Comments & Checks"| GH
+    K -->|"Audit Logs & Metrics"| DB[("🗄️ PostgreSQL<br/>Prisma ORM")]
 ```
 
 <p>
-  <a href="https://github.com/vedant-175/AI-resume-builder"><img src="https://img.shields.io/badge/View_Repository-34D399?style=for-the-badge&logo=github&logoColor=black" alt="View repository" /></a>
-  <!-- ADD WHEN LIVE: <a href="YOUR-LIVE-DEMO-URL"><img src="https://img.shields.io/badge/Live_Demo-0d1117?style=for-the-badge&logo=render&logoColor=34D399" alt="Live demo" /></a> -->
+  <a href="https://github.com/vedant-175/GitSentinel"><img src="https://img.shields.io/badge/View_Repository-34D399?style=for-the-badge&logo=github&logoColor=black" alt="View repository" /></a>
 </p>
 
 <br/>
@@ -94,16 +96,26 @@ flowchart LR
 <table>
   <tr>
     <td width="50%" valign="top">
+      <h4>🧠 AI Resume Builder</h4>
+      <p>A full-stack app that helps people write better resumes with live-preview editor, ATS compatibility scoring (0–100), AI suggestions, and client-side PDF export.</p>
+      <p><sub><b>React 19 · TypeScript · Vite · Tailwind · Express · Groq API</b></sub></p>
+      <a href="https://github.com/vedant-175/AI-resume-builder">Code</a>
+    </td>
+    <td width="50%" valign="top">
       <h4>🌐 Interactive Developer Portfolio</h4>
-      <p>A portfolio exploring 3D visuals, animation and interactive UI.</p>
+      <p>A personal portfolio exploring 3D visuals, animation, and interactive UI.</p>
       <p><sub><b>React · Three.js · React Three Fiber · GSAP</b></sub></p>
       <a href="https://github.com/vedant-175/My-Portfolio-">Code</a> · <a href="https://vedant-175.github.io/website/">Live</a>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h4>🎓 Smart Internship Portal</h4>
-      <p>An internship discovery and management web app. See the repo README for implementation details and attribution to the original project.</p>
-      <p><sub><b>Web application development</b></sub></p>
+      <p>An internship discovery and management web application built for students and recruiters.</p>
+      <p><sub><b>Full-Stack Web Development</b></sub></p>
       <a href="https://github.com/vedant-175/Smart-Internship-Portal">Code</a>
+    </td>
+    <td width="50%" valign="top">
     </td>
   </tr>
 </table>
@@ -124,9 +136,10 @@ flowchart LR
 
 ## 🎯 What I'm working toward
 
-- [x] Ship a full-stack AI app (React + TypeScript + Express + LLM API)
+- [x] Ship GitSentinel: Autonomous AI PR Code Review & Security Gate
+- [x] Build an AI Resume Builder (React + TS + Groq API)
 - [x] Build an interactive 3D portfolio
-- [ ] Add tests and CI to my main projects
+- [ ] Add tests and CI to all main projects
 - [ ] Deploy every project with a live demo link
 - [ ] Contribute to an open-source project
 - [ ] Land a full-stack / AI engineering internship

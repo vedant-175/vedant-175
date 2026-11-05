@@ -122,6 +122,18 @@ flowchart LR
 
 <br/>
 
+## 📈 GitHub Stats
+
+<p align="center">
+  <img src="assets/github-stats.svg" alt="GitHub stats" width="100%" />
+</p>
+<p align="center">
+  <img src="assets/github-languages.svg" alt="Top languages" width="49%" />
+  <img src="assets/github-streak.svg" alt="GitHub streak" width="49%" />
+</p>
+
+<br/>
+
 ## 🏆 Achievements & Community
 
 - 🎓 **Google Gemini Student Ambassador** (since Sep 2026)

@@ -111,9 +111,9 @@ flowchart LR
   <tr>
     <td width="50%" valign="top">
       <h4>🎓 Smart Internship Portal</h4>
-      <p>An internship discovery and management web application built for students and recruiters.</p>
-      <p><sub><b>Full-Stack Web Development</b></sub></p>
-      <a href="https://github.com/vedant-175/Smart-Internship-Portal">Code</a>
+      <p>Capstone MERN app with an AI-powered ATS resume-scoring engine (Groq, Llama 3.3 70B) that falls back to deterministic keyword matching if the API is unavailable. Built with teammates; I worked on the frontend.</p>
+      <p><sub><b>React 19 · Vite · Node.js · Express 5 · MongoDB · JWT</b></sub></p>
+      <a href="https://github.com/vedant-175/Smart-Internship-portal">Code</a>
     </td>
     <td width="50%" valign="top">
     </td>
@@ -122,15 +122,13 @@ flowchart LR
 
 <br/>
 
-## 📈 GitHub Activity
+## 🏆 Achievements & Community
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=vedant-175&show_icons=true&hide_border=true&bg_color=0d1117&title_color=34d399&icon_color=34d399&text_color=c9d1d9&ring_color=34d399&border_radius=12" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedant-175&layout=compact&hide_border=true&bg_color=0d1117&title_color=34d399&text_color=c9d1d9&border_radius=12" alt="Top languages" />
-</p>
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=vedant-175&hide_border=true&background=0d1117&ring=34d399&fire=34d399&currStreakLabel=34d399&currStreakNum=c9d1d9&sideNums=c9d1d9&sideLabels=c9d1d9&dates=8b949e&border_radius=12" alt="GitHub streak" />
-</p>
+- 🎓 **Google Gemini Student Ambassador** (since Sep 2026)
+- 🌱 **GSSoC'26 Ambassador & Contributor** (May–Aug 2026)
+- 🏁 **Web-a-Thon 2.0 Finalist**, one of 100 teams (Feb 2026)
+- 🏁 **Code-a-Haunt 2.0 Finalist** (Feb 2025)
+- 🎓 B.Tech CSE at Lovely Professional University · CGPA 8.54
 
 <br/>
 
@@ -141,7 +139,7 @@ flowchart LR
 - [x] Build an interactive 3D portfolio
 - [ ] Add tests and CI to all main projects
 - [ ] Deploy every project with a live demo link
-- [ ] Contribute to an open-source project
+- [x] Contribute to open source (GSSoC'26)
 - [ ] Land a full-stack / AI engineering internship
 
 <br/>
